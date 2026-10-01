@@ -1,0 +1,16 @@
+{
+  "name": "client-finder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-Powered Lead Discovery Tool",
+  "scripts": {
+    "dev": "concurrently -n \"server,client\" -c \"blue,green\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "preview": "npm --prefix client run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
