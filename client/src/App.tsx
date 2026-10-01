@@ -139,11 +139,6 @@ export function App() {
     <div className="min-h-screen bg-[#fafafa] flex flex-col text-zinc-900 selection:bg-zinc-900 selection:text-white">
       {/* Top Navigation */}
       <Header
-        currentView={viewState}
-        onSelectView={(v) => {
-          setViewState(v)
-          setExtractError(null)
-        }}
         onReset={handleReset}
       />
 
